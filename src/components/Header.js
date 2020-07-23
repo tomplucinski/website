@@ -29,7 +29,7 @@ const Header = props => (
               </a>
             </li>
             <li>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tapluci1@gmail.com" target="_email" className="icon fa-envelope">
+              <a href="mailto:tapluci1@gmail.com" target="_email" className="icon fa-envelope">
                 <span className="label">Email</span>
               </a>
             </li>
@@ -38,25 +38,7 @@ const Header = props => (
     </div>
     <nav>
       <ul>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('intro')
-            }}
-          >
-            Intro
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('work')
-            }}
-          >
-            Work
-          </button>
-        </li>
-        <li>
+      <li>
           <button
             onClick={() => {
               props.onOpenArticle('about')
@@ -68,10 +50,10 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('contact')
+              props.onOpenArticle('work')
             }}
           >
-            Contact
+            Work
           </button>
         </li>
       </ul>
