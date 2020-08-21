@@ -2,6 +2,9 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import pic02 from '../images/workpic.jpg'
 import pic03 from '../images/pic03.jpg'
+import pic04 from '../images/work1.jpg'
+import pic05 from '../images/work2.jpg'
+import pic06 from '../images/work3.jpg'
 
 class Main extends React.Component {
   render() {
@@ -28,9 +31,23 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Work</h2>
+            <h3><a href="http://stormy-inlet-04172.herokuapp.com/" target="_blank">PluggedIn</a></h3>
+              <span className="image main">
+                <img src={pic02} alt="" />
+              </span>
+          <h3>Travel Buddy</h3>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <img src={pic04} alt="" />
           </span>
+          <h3>Canvas Collect</h3>
+          <span className="image main">
+            <img src={pic05} alt="" />
+          </span>
+          <h3>Cheer</h3>
+          <span className="image main">
+            <img src={pic06} alt="" />
+          </span>
+
           {close}
         </article>
 
