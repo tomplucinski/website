@@ -79,11 +79,10 @@ class Main extends React.Component {
         >
           <h2 className="major">About</h2>
           <p>My name is Tom Plucinski, I am a Software Developer from Chicago, IL. I love to travel, build awesome software, and work with great people.
-            I got into this industry because in the world we live in today, everything runs on software. It's fascinating how quickly things are progressing
-          and being on the forefront of technology is as fulfilling as it gets for me.</p>
-          <span className="image main">
-            {/*<img src={pic03} alt="" />*/}
-          </span>
+            I got into this industry because almost everything we touch runs on software and the opportunities we have being on the forefront of technology innovation are endless.
+          Currently, I work on web applications as well as distributed system integrations heavily focused on API's. In my spare time I work on side projects
+          that include web and mobile applications.
+          </p>
           {close}
         </article>
       </div>
