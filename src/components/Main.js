@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic02 from '../images/workpic.jpg'
+import pic01 from '../images/pic01.jpg'
+import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
-import pic04 from '../images/work1.jpg'
-import pic05 from '../images/work2.jpg'
-import pic06 from '../images/work3.jpg'
+import pic04 from '../images/pic04.jpg'
 import '../assets/scss/components/_projectButtons.scss'
 
 class Main extends React.Component {
@@ -38,7 +37,7 @@ class Main extends React.Component {
           <a className="redirectButton" href="http://stormy-inlet-04172.herokuapp.com/" target="_blank" rel="noopener">View Project</a>
           <a className="redirectButton" href="https://github.com/tomplucinski/PluggedIN" target="_blank" rel="noopener">View Code</a>
               <span className="image main">
-                <img src={pic02} alt="" />
+                <img src={pic01} alt="" />
               </span>
           <h3>Travel Buddy</h3>
           <p>Travel Buddy is an Android Native application that allows users to obtain information about travel destinations.
@@ -48,7 +47,7 @@ class Main extends React.Component {
           </p>
           <a className="redirectButton" href="https://github.com/tomplucinski/TravelBuddy" target="_blank" rel="noopener">View Code</a>
           <span className="image main">
-            <img src={pic04} alt="" />
+            <img src={pic02} alt="" />
           </span>
           <h3>Canvas Collect</h3>
           <p>Canvas Collect is an eCommerce application for people looking to buy and sell their artwork online. Features include creating profiles,
@@ -56,7 +55,7 @@ class Main extends React.Component {
             utilizing Firebase for profile creation, authentication, and database services.</p>
           <a className="redirectButton" href="https://github.com/tomplucinski/CanvasCollect" target="_blank" rel="noopener">View Code</a>
           <span className="image main">
-            <img src={pic05} alt="" />
+            <img src={pic03} alt="" />
           </span>
           <h3>Cheer</h3>
           <p>Cheer is a web application that provides employers with an easy way to gather employee feedback in the workplace.
@@ -65,7 +64,7 @@ class Main extends React.Component {
             Engineered with React, Redux, GraphQL, and MongoDB.</p>
           <a className="redirectButton" href="https://github.com/tomplucinski/cheer" target="_blank" rel="noopener">View Code</a>
           <span className="image main">
-            <img src={pic06} alt="" />
+            <img src={pic04} alt="" />
           </span>
 
           {close}
