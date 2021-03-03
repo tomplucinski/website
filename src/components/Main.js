@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
+import pic01 from '../images/pluggedIn.png'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 import pic04 from '../images/pic04.jpg'
@@ -34,8 +34,8 @@ class Main extends React.Component {
           <h3>PluggedIn</h3>
           <p>PluggedIn is a social networking tool designed for developers. Key features include profile creation, connecting with others in your network, writing,
             commenting, and liking posts. Web and mobile friendly. Developed with React, Redux, Express, Mongoose, MongoDB, Firebase, and deployed via Heroku.</p>
-          <a className="redirectButton" href="http://stormy-inlet-04172.herokuapp.com/" target="_blank" rel="noopener">View Project</a>
-          <a className="redirectButton" href="https://github.com/tomplucinski/PluggedIN" target="_blank" rel="noopener">View Code</a>
+          <a className="redirectButton" href="http://stormy-inlet-04172.herokuapp.com/" target="_blank" rel="noreferrer">View Project</a>
+          <a className="redirectButton" href="https://github.com/tomplucinski/PluggedIN" target="_blank" rel="noreferrer">View Code</a>
               <span className="image main">
                 <img src={pic01} alt="" />
               </span>
@@ -43,9 +43,9 @@ class Main extends React.Component {
           <p>Travel Buddy is an Android Native application that allows users to obtain information about travel destinations.
             Users can input origin and destination locations and receive information about flights, weather, and things to do for entertainment.
             This application is designed in Android Studio and developed with Kotlin. API's and broken up into microservices.<br/>
-            <strong><a href="https://github.com/tomplucinski/TravelBuddyFlightAPI" target="_blank" rel="noopener">Travel Buddy Flight API.</a></strong>
+            <strong><a href="https://github.com/tomplucinski/TravelBuddyFlightAPI" target="_blank" rel="noreferrer">Travel Buddy Flight API.</a></strong>
           </p>
-          <a className="redirectButton" href="https://github.com/tomplucinski/TravelBuddy" target="_blank" rel="noopener">View Code</a>
+          <a className="redirectButton" href="https://github.com/tomplucinski/TravelBuddy" target="_blank" rel="noreferrer">View Code</a>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
@@ -53,7 +53,7 @@ class Main extends React.Component {
           <p>Canvas Collect is an eCommerce application for people looking to buy and sell their artwork online. Features include creating profiles,
             searching for products by name or category, writing reviews, purchase history, and checkout. This is an iOS native application built with Xcode and Swift
             utilizing Firebase for profile creation, authentication, and database services.</p>
-          <a className="redirectButton" href="https://github.com/tomplucinski/CanvasCollect" target="_blank" rel="noopener">View Code</a>
+          <a className="redirectButton" href="https://github.com/tomplucinski/CanvasCollect" target="_blank" rel="noreferrer">View Code</a>
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
@@ -62,7 +62,7 @@ class Main extends React.Component {
             Employees respond to daily questions in Slack and their answers are passed through IBM Watson’s Natural Language Understanding API
             to identify the emotions and sentiment. This data is then visualized in a dashboard for managers and leadership to evaluate.
             Engineered with React, Redux, GraphQL, and MongoDB.</p>
-          <a className="redirectButton" href="https://github.com/tomplucinski/cheer" target="_blank" rel="noopener">View Code</a>
+          <a className="redirectButton" href="https://github.com/tomplucinski/cheer" target="_blank" rel="noreferrer">View Code</a>
           <span className="image main">
             <img src={pic04} alt="" />
           </span>
@@ -78,11 +78,38 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">About</h2>
-          <p>My name is Tom Plucinski, I am a Software Developer from Chicago, IL. I love to travel, build awesome software, and work with great people.
-            I got into this industry because almost everything we touch runs on software and the opportunities we have being on the forefront of technology innovation are endless.
-          Currently, I work on web applications as well as distributed system integrations heavily focused on API's. In my spare time I work on side projects
-          that include web and mobile applications.
+          <p>Hi! I'm Tom, a Software Developer from Chicago, IL. I engineer full stack web applications and API's in the health care space.
+          I have experience with project inception, architecture, feature development, testing, documentation, and deployment in a distributed environment.
+          Passionate about writing great software, implementing new technology, learning, and collaborating. In my spare time I enjoy exploring nature and the outdoors.
           </p>
+          {close}
+        </article>
+
+        <article
+          id="about"
+          className={`${this.props.article === 'technology' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Technology</h2>
+          <p>I am proficient in Javascript and Java. Below are some of the libraries, frameworks, and tools I have experience working with.</p>
+          <h4>Front End</h4>
+          <ul>
+            <li>React, Redux, Angular, HTML, vanilla CSS, CSS libraries (Bootstrap, Bulma, Material UI)</li>
+          </ul>
+          <h4>Back End</h4>
+          <ul>
+            <li>Spring Framework, Node.js, SQL, MongoDB, Postgres, Microsoft SQL Server</li>
+          </ul>
+          <h4>Testing</h4>
+          <ul>
+            <li>Enzyme, Jasmine, Cypress.io, JUnit, Mockito, Cucumber</li>
+          </ul>
+          <h4>Other</h4>
+          <ul>
+            <li>Docker, PCF, MockServer, shell scripting</li>
+          </ul>
           {close}
         </article>
       </div>
