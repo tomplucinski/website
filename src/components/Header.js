@@ -9,7 +9,7 @@ const Header = props => (
     <div className="content">
       <div className="inner">
         <h1>Tom Plucinski</h1>
-        <h2>Software Developer</h2>
+        <h2>Software Engineer</h2>
         <ul className="icons">
             <li>
               <a
@@ -20,12 +20,6 @@ const Header = props => (
             <li>
               <a href="https://linkedin.com/in/thomasplucinski" target="_linkedin" className="icon fa-linkedin">
                 <span className="label">linkedin</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/tompojones" target="_twitter" className="icon fa-twitter">
-                <span className="label">Twitter</span>
               </a>
             </li>
             <li>
