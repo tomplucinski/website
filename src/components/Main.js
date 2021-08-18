@@ -78,9 +78,10 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">About</h2>
-          <p>Hi! I'm Tom, a Software Developer from Chicago, IL. I engineer full stack web applications and API's in the health care space.
+          <p>Hello, my name is Tom and I'm a Software Engineer from Chicago, IL. I have experience working in the health care and advertisement industries where I get to engineer
+          IoT applications. I am a generalist by trade, meaning I work across the entire software stack including the database, API, and UI layers.
           I have experience with project inception, architecture, feature development, testing, documentation, and deployment in a distributed environment.
-          Passionate about writing great software, implementing new technology, learning, and collaborating. In my spare time I enjoy exploring nature and the outdoors.
+          Passionate about writing great software, implementing new technologies, learning, and collaborating.
           </p>
           {close}
         </article>
@@ -94,22 +95,14 @@ class Main extends React.Component {
         >
           <h2 className="major">Technology</h2>
           <p>I am proficient in Javascript and Java. Below are some of the libraries, frameworks, and tools I have experience working with.</p>
-          <h4>Front End</h4>
-          <ul>
-            <li>React, Redux, Angular, HTML, vanilla CSS, CSS libraries (Bootstrap, Bulma, Material UI)</li>
-          </ul>
           <h4>Back End</h4>
-          <ul>
-            <li>Spring Framework, Node.js, SQL, MongoDB, Postgres, Microsoft SQL Server</li>
-          </ul>
+          <p>Node, Express.js, Spring, NoSQL, SQL</p>
+          <h4>Front End</h4>
+          <p>React, Redux, Angular, HTML, CSS</p>
+          <h4>Deployment / Build Tools</h4>
+          <p>Docker, Azure, IoT Edge</p>
           <h4>Testing</h4>
-          <ul>
-            <li>Enzyme, Jasmine, Cypress.io, JUnit, Mockito, Cucumber</li>
-          </ul>
-          <h4>Other</h4>
-          <ul>
-            <li>Docker, PCF, MockServer, shell scripting</li>
-          </ul>
+          <p>Jest, Cypress, Enzyme, JUnit, Mockito, Cucumber</p>
           {close}
         </article>
       </div>
