@@ -1,0 +1,21 @@
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profilePicContainer {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.profileImg {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  opacity: .7;
+  left: 50%;
+}

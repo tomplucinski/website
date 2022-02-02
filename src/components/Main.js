@@ -4,7 +4,9 @@ import pic01 from '../images/pluggedIn.png'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 import pic04 from '../images/pic04.jpg'
+import profilePic from '../images/profile.jpg'
 import '../assets/scss/components/_projectButtons.scss'
+import './Main.css'
 
 class Main extends React.Component {
   render() {
@@ -77,32 +79,16 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
-          <p>Hello, my name is Tom and I'm a Software Engineer from Chicago, IL. I have experience working in the health care and advertisement industries where I get to engineer
-          IoT applications. I am a generalist by trade, meaning I work across the entire software stack including the database, API, and UI layers.
-          I have experience with project inception, architecture, feature development, testing, documentation, and deployment in a distributed environment.
-          Passionate about writing great software, implementing new technologies, learning, and collaborating.
+          <h2 className="major aboutSection">About Tom</h2>
+          <div className='profilePicContainer'>
+            <img src={profilePic} className='profileImg'/>
+          </div>
+          <p>I am a Software Engineer specializing in building cloud native and IoT applications.
+            I have extensive knowledge developing scalable full stack applications deployed to thousands of devices, and experience
+            implementing cloud architecture solutions.
+            My enginerring philosophy consists of understanding the domain, determining the right tools, and ensuring those tools 
+            get used in the correct way. 
           </p>
-          {close}
-        </article>
-
-        <article
-          id="about"
-          className={`${this.props.article === 'technology' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">Technology</h2>
-          <p>I am proficient in Javascript and Java. Below are some of the libraries, frameworks, and tools I have experience working with.</p>
-          <h4>Back End</h4>
-          <p>Node, Express.js, Spring, NoSQL, SQL</p>
-          <h4>Front End</h4>
-          <p>React, Redux, Angular, HTML, CSS</p>
-          <h4>Deployment / Build Tools</h4>
-          <p>Docker, Azure, IoT Edge</p>
-          <h4>Testing</h4>
-          <p>Jest, Cypress, Enzyme, JUnit, Mockito, Cucumber</p>
           {close}
         </article>
       </div>
