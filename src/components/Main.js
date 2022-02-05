@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pluggedIn.png'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
 import pic04 from '../images/pic04.jpg'
 import profilePic from '../images/profile.jpg'
 import '../assets/scss/components/_projectButtons.scss'
@@ -27,9 +25,8 @@ class Main extends React.Component {
       >
         <article
           id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
+          className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''
+            }`}
           style={{ display: 'none' }}
         >
           <h2 className="major">Work</h2>
@@ -38,26 +35,8 @@ class Main extends React.Component {
             commenting, and liking posts. Web and mobile friendly. Developed with React, Redux, Express, Mongoose, MongoDB, Firebase, and deployed via Heroku.</p>
           <a className="redirectButton" href="http://stormy-inlet-04172.herokuapp.com/" target="_blank" rel="noreferrer">View Project</a>
           <a className="redirectButton" href="https://github.com/tomplucinski/PluggedIN" target="_blank" rel="noreferrer">View Code</a>
-              <span className="image main">
-                <img src={pic01} alt="" />
-              </span>
-          <h3>Travel Buddy</h3>
-          <p>Travel Buddy is an Android Native application that allows users to obtain information about travel destinations.
-            Users can input origin and destination locations and receive information about flights, weather, and things to do for entertainment.
-            This application is designed in Android Studio and developed with Kotlin. API's and broken up into microservices.<br/>
-            <strong><a href="https://github.com/tomplucinski/TravelBuddyFlightAPI" target="_blank" rel="noreferrer">Travel Buddy Flight API.</a></strong>
-          </p>
-          <a className="redirectButton" href="https://github.com/tomplucinski/TravelBuddy" target="_blank" rel="noreferrer">View Code</a>
           <span className="image main">
-            <img src={pic02} alt="" />
-          </span>
-          <h3>Canvas Collect</h3>
-          <p>Canvas Collect is an eCommerce application for people looking to buy and sell their artwork online. Features include creating profiles,
-            searching for products by name or category, writing reviews, purchase history, and checkout. This is an iOS native application built with Xcode and Swift
-            utilizing Firebase for profile creation, authentication, and database services.</p>
-          <a className="redirectButton" href="https://github.com/tomplucinski/CanvasCollect" target="_blank" rel="noreferrer">View Code</a>
-          <span className="image main">
-            <img src={pic03} alt="" />
+            <img src={pic01} alt="" />
           </span>
           <h3>Cheer</h3>
           <p>Cheer is a web application that provides employers with an easy way to gather employee feedback in the workplace.
@@ -74,20 +53,20 @@ class Main extends React.Component {
 
         <article
           id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
+          className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''
+            }`}
           style={{ display: 'none' }}
         >
           <h2 className="major aboutSection">About Tom</h2>
           <div className='profilePicContainer'>
-            <img src={profilePic} className='profileImg'/>
+            <img src={profilePic} className='profileImg' />
           </div>
-          <p>I am a Software Engineer specializing in building cloud native and IoT applications.
-            I have extensive knowledge developing scalable full stack applications deployed to thousands of devices, and experience
-            implementing cloud architecture solutions.
-            My enginerring philosophy consists of understanding the domain, determining the right tools, and ensuring those tools 
-            get used in the correct way. 
+          <p>
+            I am a full stack software engineer specializing in node.js, react, and azure. I have extensive
+            experience developing scalable cloud native and IoT applications deployed to thousands of devices,
+            implementing cloud architecture solutions, and leading feature development using agile methodologies.
+            I firmly believe in understanding the business domain and selecting the most efficient tools when
+            implementing solutions.
           </p>
           {close}
         </article>
