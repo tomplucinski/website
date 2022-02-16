@@ -59,7 +59,7 @@ class Main extends React.Component {
         >
           <h2 className="major aboutSection">About Tom</h2>
           <div className='profilePicContainer'>
-            <img src={profilePic} className='profileImg' />
+            <img src={profilePic} alt='profile_picture' className='profileImg' />
           </div>
           <p>
             I am a full stack software engineer specializing in node.js, react, and azure. I have extensive

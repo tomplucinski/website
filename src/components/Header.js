@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import resume from '../images/tomplucinskiresume.pdf'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -49,6 +50,9 @@ const Header = props => (
           >
             Work
           </button>
+        </li>
+        <li>
+          <a href={resume} target='_target' className='resume'>Resume</a>
         </li>
       </ul>
     </nav>
