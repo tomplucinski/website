@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import algoPic from '../images/algorithms.jpg'
 import pic01 from '../images/pluggedIn.png'
 import pic04 from '../images/pic04.jpg'
 import profilePic from '../images/profile.jpg'
@@ -31,6 +32,21 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Work</h2>
+          <h3>Algorithms</h3>
+          <p>
+            Repository containing algorithms and data structure implementations
+          </p>
+          <a
+            className="redirectButton"
+            href="https://github.com/tomplucinski/algorithms_v2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Code
+          </a>
+          <span className="image main">
+            <img src={algoPic} alt="algorithms" />
+          </span>
           <h3>PluggedIn</h3>
           <p>
             PluggedIn is a social networking tool designed for developers. Key
@@ -56,7 +72,7 @@ class Main extends React.Component {
             View Code
           </a>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={pic01} alt="pluggedIn" />
           </span>
           <h3>Cheer</h3>
           <p>
@@ -77,7 +93,7 @@ class Main extends React.Component {
             View Code
           </a>
           <span className="image main">
-            <img src={pic04} alt="" />
+            <img src={pic04} alt="cheer" />
           </span>
 
           {close}
