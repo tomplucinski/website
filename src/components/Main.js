@@ -45,7 +45,7 @@ class Main extends React.Component {
             View Code
           </a>
           <span className="image main">
-            <img src={algoPic} alt="" />
+            <img src={algoPic} alt="algorithms" />
           </span>
           <h3>PluggedIn</h3>
           <p>
@@ -72,7 +72,7 @@ class Main extends React.Component {
             View Code
           </a>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={pic01} alt="pluggedIn" />
           </span>
           <h3>Cheer</h3>
           <p>
@@ -93,7 +93,7 @@ class Main extends React.Component {
             View Code
           </a>
           <span className="image main">
-            <img src={pic04} alt="" />
+            <img src={pic04} alt="cheer" />
           </span>
 
           {close}
