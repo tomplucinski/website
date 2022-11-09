@@ -116,7 +116,7 @@ class Main extends React.Component {
           </div>
           <p>
             Software engineer with a focus on building cloud native and IoT
-            applications. Extensive experience in SOA, microservice and IoT
+            applications. Extensive experience with SOA, microservices and IoT
             environments. Leading application feature development, integrating
             performance monitoring, and automating all things possible.
           </p>
