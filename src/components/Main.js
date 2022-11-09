@@ -115,11 +115,10 @@ class Main extends React.Component {
             />
           </div>
           <p>
-            Senior software engineer with a focus on building cloud native web
-            and IoT applications on Azure. Extensive experience developing
-            scalable apps deployed to thousands of devices, implementing cloud
-            architecture solutions, and leading feature development using agile
-            methodologies.
+            Software engineer with a focus on building cloud native and IoT
+            applications. Extensive experience in SOA, microservice and IoT
+            environments. Leading application feature development, integrating
+            performance monitoring, and automating all things possible.
           </p>
           {close}
         </article>

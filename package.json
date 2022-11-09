@@ -3,6 +3,9 @@
   "description": "My personal website",
   "version": "1.0.0",
   "author": "Tom Plucinski",
+  "engines" : { 
+    "node" : ">=10.0.0 <16.0.0"
+  },
   "dependencies": {
     "gatsby": "^2.19.5",
     "gatsby-plugin-manifest": "^2.2.38",
