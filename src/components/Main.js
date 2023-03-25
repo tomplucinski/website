@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import algoPic from '../images/algorithms.jpg'
+import javaAlgoPic from '../images/java-algo.jpg'
+import apiPic from '../images/api-pic.jpg'
 import pic01 from '../images/pluggedIn.png'
-import pic04 from '../images/pic04.jpg'
 import profilePic from '../images/profile.jpg'
 import '../assets/scss/components/_projectButtons.scss'
 import './Main.css'
@@ -31,10 +32,29 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
-          <h3>Algorithms</h3>
+          <h2 className="major">Projects</h2>
+          <h3>Node API Generator</h3>
+          <p>
+            This is a template to quickly bootstrap a new backend cloud service
+            written in Typescript using Routing Controllers, TypeORM, and
+            Postgres.
+          </p>
+          <a
+            className="redirectButton"
+            href="https://github.com/tomplucinski/node-api-generator"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Code
+          </a>
+          <span className="image main">
+            <img src={apiPic} alt="algorithms" />
+          </span>
+
+          <h3>Typescript Algorithms</h3>
           <p>
             Repository containing algorithms and data structure implementations
+            written in Typescript
           </p>
           <a
             className="redirectButton"
@@ -47,22 +67,32 @@ class Main extends React.Component {
           <span className="image main">
             <img src={algoPic} alt="algorithms" />
           </span>
+
+          <h3>Java Algorithms</h3>
+          <p>
+            Repository containing algorithms and data structure implementations
+            written in Java
+          </p>
+          <a
+            className="redirectButton"
+            href="https://github.com/tomplucinski/Algorithms"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Code
+          </a>
+          <span className="image main">
+            <img src={javaAlgoPic} alt="algorithms" />
+          </span>
+
           <h3>PluggedIn</h3>
           <p>
             PluggedIn is a social networking tool designed for developers. Key
             features include profile creation, connecting with others in your
             network, writing, commenting, and liking posts. Web and mobile
-            friendly. Developed with React, Redux, Express, Mongoose, MongoDB,
-            Firebase, and deployed via Heroku.
+            friendly. Developed with React, Redux, Express, Mongoose, and
+            MongoDB.
           </p>
-          <a
-            className="redirectButton"
-            href="http://stormy-inlet-04172.herokuapp.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View Project
-          </a>
           <a
             className="redirectButton"
             href="https://github.com/tomplucinski/PluggedIN"
@@ -74,28 +104,6 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic01} alt="pluggedIn" />
           </span>
-          <h3>Cheer</h3>
-          <p>
-            Cheer is a web application that provides employers with an easy way
-            to gather employee feedback in the workplace. Employees respond to
-            daily questions in Slack and their answers are passed through IBM
-            Watson’s Natural Language Understanding API to identify the emotions
-            and sentiment. This data is then visualized in a dashboard for
-            managers and leadership to evaluate. Engineered with React, Redux,
-            GraphQL, and MongoDB.
-          </p>
-          <a
-            className="redirectButton"
-            href="https://github.com/tomplucinski/cheer"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View Code
-          </a>
-          <span className="image main">
-            <img src={pic04} alt="cheer" />
-          </span>
-
           {close}
         </article>
 
@@ -115,10 +123,11 @@ class Main extends React.Component {
             />
           </div>
           <p>
-            Software engineer with a focus on building performant cloud native
-            applications. Extensive experience developing solutions in microservice, IoT,
-            and SOA environments. Leading application feature development,
-            collaborating with stakeholders, and automating all things possible.
+            Full stack software engineer with a focus on backend development.
+            Extensive experience developing IoT and cloud services, integrating
+            systems, and building applications that streamline and support
+            business capabilities. Proven track record of leading small teams
+            and delivering crucial business applications.
           </p>
           {close}
         </article>

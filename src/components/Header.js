@@ -12,28 +12,39 @@ const Header = props => (
         <h1>Tom Plucinski</h1>
         <h2>Software Engineer</h2>
         <ul className="icons">
-            <li>
-              <a
-                href="https://github.com/tomplucinski" target="_github" className="icon fa-github">
-                <span className="label">GitHub</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://linkedin.com/in/thomasplucinski" target="_linkedin" className="icon fa-linkedin">
-                <span className="label">linkedin</span>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:tapluci1@gmail.com" target="_email" className="icon fa-envelope">
-                <span className="label">Email</span>
-              </a>
-            </li>
-          </ul>
+          <li>
+            <a
+              href="https://github.com/tomplucinski"
+              target="_github"
+              className="icon fa-github"
+            >
+              <span className="label">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/thomasplucinski"
+              target="_linkedin"
+              className="icon fa-linkedin"
+            >
+              <span className="label">linkedin</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:tapluci1@gmail.com"
+              target="_email"
+              className="icon fa-envelope"
+            >
+              <span className="label">Email</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <nav>
       <ul>
-      <li>
+        <li>
           <button
             onClick={() => {
               props.onOpenArticle('about')
@@ -48,11 +59,13 @@ const Header = props => (
               props.onOpenArticle('work')
             }}
           >
-            Work
+            Projects
           </button>
         </li>
         <li>
-          <a href={resume} target='_target' className='resume'>Resume</a>
+          <a href={resume} target="_target" className="resume">
+            Resume
+          </a>
         </li>
       </ul>
     </nav>
